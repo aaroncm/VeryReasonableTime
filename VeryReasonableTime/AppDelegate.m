@@ -33,7 +33,7 @@
 - (void) updateTitle {
     double secs = [[NSDate date] timeIntervalSince1970] + 3600;
     int beats = floor(fmod((secs / 86.4), 1000));
-    [_statusItem setTitle:[NSString stringWithFormat:@"@%i", beats]];
+    [_statusItem setTitle:[NSString stringWithFormat:@"@%03i", beats]];
 }
 
 - (void)setupMenu {
